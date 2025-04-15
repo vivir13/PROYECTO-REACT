@@ -1,0 +1,169 @@
+/* Fondo general de toda la app */
+body {
+  background-color: #f3dfed; /* Fondo completamente negro */
+  color: #a259ff;            /* Texto en morado suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de navegación superior */
+.navbar {
+  background-color:#000000; /* Fondo negro */
+  color: #f3dfed;;            /* Letras moradas */
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #000000; /* Enlaces morados */
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color:   #a259ff; /* Un morado más claro al pasar el mouse */
+  text-decoration: underline;
+}
+
+/* Títulos principales */
+h1, h2, h3 {
+  color: #a259ff;
+}
+/* Contenedor de las páginas */
+.container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+/* Tarjetas de producto */
+.tarjeta {
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  color: #a259ff;
+  box-shadow: 0 4px 10px rgba(162, 89, 255, 0.15);
+}
+
+.tarjeta-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.tarjeta-contenido {
+  flex: 1;
+}
+
+.tarjeta-titulo {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #a259ff;
+}
+
+.tarjeta-descripcion {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+/* Botones */
+.boton-agregar, .boton-quitar {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.boton-agregar {
+  background-color: #a259ff;
+  color: #fff;
+}
+
+.boton-agregar:hover {
+  background-color: #c084fc;
+}
+
+.boton-quitar {
+  background-color: #7e22ce;
+  color: #fff;
+}
+
+.boton-quitar:hover {
+  background-color: #6b21a8;
+}
+
+
+/* Carrito */
+.carrito {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 2rem;
+  color: #880363;
+}
+
+/* Tabla del carrito */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  color: #d6b3ff;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.btn {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #a259ff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #c084fc;
+}
+
+.btn-danger {
+  background-color: #6b21a8;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #581c87;
+}
+
+
+/* Estilo del botón COMPRAR */
+.d-grid .btn {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #a259ff;
+  border-radius: 6px;
+}
+
+.d-grid .btn:hover {
+  background-color: #c084fc;
+}
